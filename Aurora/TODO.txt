@@ -1,0 +1,7 @@
+-write initial cli [done]
+-write simple TCP Connect scan [done]
+-add threading [done]
+-add other scan types
+  -SYN | FIN | ACK | etc...
+-add scripting support(OPTIONAL)
+-add option for scanning all ports
