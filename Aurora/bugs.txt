@@ -1,3 +1,2 @@
-
-1. Hangs on port 135
-2. Hangs on port 139
+1. Hangs on port 135 | fixed
+2. Hangs on port 139 | fixed
