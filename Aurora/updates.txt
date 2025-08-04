@@ -1,1 +1,1 @@
-0.0.1. remove dependency for ping3
+0.0.1. remove dependency for ping3 | IMPLEMENTED
