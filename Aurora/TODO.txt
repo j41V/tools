@@ -3,5 +3,12 @@
 -add threading [done]
 -add other scan types
   -SYN | FIN | ACK | etc...
+  
 -add scripting support(OPTIONAL)
 -add option for scanning all ports
+-add SYN scan
+-rewrite ping model
+  -default should be no ping and add timeout option for that
+  -add option -f/--fast for pinging in the beginning of the scan
+  -add option -ff/--faster for pinging threw out the scan
+  -add option -fff/--fastest for using the ping time as socket timeout

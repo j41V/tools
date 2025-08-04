@@ -1,1 +1,2 @@
 0.0.1 remove dependency for ping3 | IMPLEMENTED:
+0.0.2 rewrite ping system
