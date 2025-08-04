@@ -1,12 +1,7 @@
 import socket
 import threading
 from time import sleep 
-import ping3
-import scapy.layers
-import scapy.layers.inet
-#import syn_packets
-import binascii
-import scapy.all
+import ping
 
 class Scanner():
     def __init__(self, target, silent):
@@ -23,7 +18,7 @@ class Scanner():
         if not self.silent:
             print("[*]Pinging target", "                                                                      ", end="\r")
         try:
-            ping_time = ping3.ping(self.target_ip)
+            ping_time = ping.ping(self.target_ip)
             if ping_time == None:
                 self.get_timeout()
                 if not self.silent:
