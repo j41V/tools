@@ -11,6 +11,7 @@ class Scanner():
         self.ports_to_scan = self.select_ports()
         self.threads = []
         self.silent = silent
+        self.timeout_ports = [139, 135]
         self.timeout = 2
 
 
@@ -83,6 +84,9 @@ class Scanner():
         except ConnectionRefusedError:
             return
         except TimeoutError:
+            if port in self.timeout_ports:
+                self.open_ports.add(port)
+                return
             self.get_timeout()
             self.tcp_scan_port(port)
             return
